@@ -1,0 +1,231 @@
+/* FORM */
+#wrap #form {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400 !important;
+
+    display: none;
+
+    max-width: 1100px;
+    height: unset;
+    margin: 2% auto;
+    padding: 0 2%;
+}
+
+
+/* ALL */
+.pageContent table {
+    width: 100%;
+}
+
+.pageContent .payForm {
+    margin-bottom: 4%;
+}
+
+.pageContent .payForm h3 {
+    font-size: 30px;
+    font-weight: 500;
+
+    padding: 10px;
+
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    background-color: #bb9a43;
+}
+.pageContent .payForm th {
+	font-weight: 400;
+}
+
+.pageContent .payForm select {
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.pageContent .payForm input {
+    padding: 10px;
+
+    border: solid 1px #a9a9a9;
+    border-radius: 5px;
+}
+
+.pageContent .payForm table th .required {
+    font-size: 10px;
+
+    margin-left: 5px;
+    padding: 0 5px;
+
+    color: #f00;
+    border: 1px solid #f00;
+    border-radius: 5px;
+}
+
+/* 訂單開始 */
+table.noBlock tr:nth-child(1) {
+    float: left;
+
+    width: 30%;
+}
+
+table.noBlock tr:nth-child(2) {
+    float: left;
+
+    width: 70%;
+}
+
+table.noBlock tr th,
+table.noBlock tr td {
+    line-height: 61px;
+
+    display: block;
+
+    box-sizing: border-box;
+}
+
+table.noBlock tr th:nth-child(odd) {
+    background-color: #fff;
+}
+
+table.noBlock tr td:nth-child(odd) {
+    background-color: #fff;
+}
+
+#ec_client_landing_page_type_product_sku_id {
+    width: 90%;
+}
+
+.pymRgrTxt {
+    padding: 15px;
+
+    background-color: #fff;
+}
+
+.pymRgrTxt p {
+    margin-bottom: 10px;
+}
+
+.important {
+    color: #f00;
+}
+
+/* 收件人資訊 */
+table.spForm01 tr {
+    line-height: 61px;
+}
+
+table.spForm01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table.spForm01 th {
+    width: 30%;
+}
+
+.table.spForm01 td {
+    width: 70%;
+}
+
+#ec_client_landing_page_type_sex_1 {
+    margin-left: 20px;
+}
+
+.ui-datepicker-trigger {
+    position: absolute;
+    top: 17px;
+    right: 5px;
+
+    width: 29px;
+    height: 24px;
+    padding: 0;
+
+    border: none;
+    background: none;
+}
+
+/* 付款方式 */
+.payForm:nth-child(4) table tr:nth-child(1) {
+    line-height: 61px;
+
+    background-color: #fff;
+}
+
+.payForm:nth-child(4) table tr:nth-child(1) th {
+    width: 30%;
+}
+
+.payForm:nth-child(4) table tr:nth-child(1) td {
+    width: 70%;
+}
+
+.payForm:nth-child(4) table .np_atobarai th {
+    padding-top: 20px;
+}
+
+.payForm:nth-child(4) table .np_atobarai th img {
+    width: 80%;
+}
+
+/* 配送方式 */
+.payForm:nth-child(5) table {
+    margin-bottom: 50px;
+}
+
+.payForm:nth-child(5) table tr {
+    line-height: 50px;
+
+    background-color: #fff;
+}
+
+/* 請輸入 */
+.formParts {
+    position: relative;
+
+    display: inline-block;
+}
+
+.formParts .err {
+    position: absolute;
+    right: -40%;
+    bottom: 35%;
+
+    display: block;
+
+    padding: 0 0 0 10px;
+
+    color: #f00;
+}
+
+/* BUTTON */
+.btnCartIn {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 250%;
+    font-weight: bold;
+    font-weight: 400 !important;
+
+    display: table;
+
+    width: 70%;
+    margin: 0 auto;
+
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+
+    color: #fff;
+    border: solid 5px #fff;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #3cf, #00aeee);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.btnCartIn:hover {
+    background: linear-gradient(to top, #3cf, #00aeee);
+}
+
+.btnCartIn:disabled {
+    background-color: #999;
+    background-image: none;
+}
+
+.btnCartIn:disabled i {
+    display: none;
+}

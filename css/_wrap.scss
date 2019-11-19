@@ -1,0 +1,462 @@
+/*-------------------------
+    WRAP
+-------------------------*/
+#wrap {
+    .manager {
+        /*-------------------------
+            ./ MANGER
+        -------------------------*/
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 4.5%;
+
+        background-color: #fff;
+
+        h2 {
+            /*----- MANGER H2 ----- */
+            display: block;
+
+            width: 100%;
+
+            text-align: center;
+            letter-spacing: 5px;
+
+            color: #04123e;
+
+            @media screen and (min-width: 769px) {
+                font-size: 500%;
+            }
+
+            @media screen and (max-width:768px) {
+                font-size: 200%;
+
+                margin: 10px auto 20px;
+            }
+        }
+
+        .manager_main {
+            /*----- MANGER MAIN ----- */
+            display: flex;
+
+            @media screen and (min-width: 769px) {
+                font-size: 120%;
+                line-height: 1.7;
+
+                margin-top: 50px;
+            }
+
+            @media screen and (max-width:768px) {
+                flex-direction: column-reverse;
+            }
+
+            /*----- MANGER MAIN LEFT ----- */
+
+            .manager_main_left {
+                p {
+                    font-weight: 600;
+
+                    letter-spacing: 2px;
+
+                    span {
+                        color: #917e34;
+                    }
+                }
+
+                @media screen and (min-width: 769px) {
+                    width: 69%;
+                    padding-right: 1%;
+
+                    p {
+                        font-size: 156%;
+                    }
+                }
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+
+                    p {
+                        font-size: 125%;
+                    }
+                }
+            }
+
+            .manager_main_right {
+                /*----- MANGER MAIN RIGHT ----- */
+
+                h3 {
+                    font-size: 150%;
+
+                    padding: 5px 0;
+
+                    text-align: center;
+                    letter-spacing: 1px;
+
+                    color: #917e34;
+                    border-top: solid 1px #917e34;
+                    border-bottom: solid 1px #917e34;
+                }
+
+                p {
+                    font-size: 125%;
+                    font-weight: 600;
+
+                    text-align: center;
+                    letter-spacing: 1px;
+
+                    &:nth-child(4) {
+                        font-size: 200%;
+                        line-height: 1.3;
+
+                        margin: 10px auto 15px;
+
+                        span {
+                            font-size: 60%;
+
+                            letter-spacing: 3px;
+
+                            color: #917e34;
+                        }
+                    }
+                }
+
+                @media screen and (min-width:769px) {
+                    width: 29%;
+                    padding-left: 1%;
+
+                    h3 {
+                        margin: 20px auto 10px;
+                    }
+                }
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                    margin-bottom: 30px;
+
+                    h3 {
+                        margin: 20px 20% 10px;
+                    }
+
+                    img {
+                        display: block;
+
+                        width: 60%;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .maz {
+        /*-------------------------
+            ./ MAZ
+        -------------------------*/
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1100px;
+        margin: 8% auto;
+
+        @media screen and (max-width: 768px) {
+            padding: 4.5%;
+        }
+
+        .maz_main {
+            /*----- MAZ MAIN ----- */
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .maz_main_left {
+
+                /*----- MAZ MAIN LEFT ----- */
+                @media screen and (min-width: 769px) {
+                    width: 38.5%;
+                    padding-right: 1.5%;
+                }
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
+            }
+
+            .maz_main_right {
+                /*----- MAZ MAIN RIGHT ----- */
+
+                p {
+                    font-weight: 600;
+
+                    padding: 25px 0;
+
+                    letter-spacing: 2px;
+
+                    color: #fff;
+                    border-top: solid 1px #fff;
+                    border-bottom: solid 1px #fff;
+
+                    span {
+                        border-bottom: solid 1px #fff;
+                    }
+                }
+
+                @media screen and (min-width:769px) {
+                    width: 58.5%;
+                    padding-left: 1.5%;
+
+                    p {
+                        font-size: 156%;
+                    }
+                }
+
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                    margin-top: 50px;
+
+                    p {
+                        font-size: 125%;
+                    }
+                }
+            }
+        }
+
+        .main_medal {
+            /*----- MAZ MEDAL ----- */
+            margin: 8% auto;
+        }
+    }
+
+    .blogger {
+        /*-------------------------
+            ./ BLOGGER
+        -------------------------*/
+        background-color: #bb9a43;
+        background-position: top;
+
+        @media screen and (min-width: 769px) {
+            padding: 10% 0 5%;
+
+            background-image: url('../images/gold_wave_pc.png');
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 50px 5%;
+
+            background-image: url('../images/gold_wave_sp.png');
+        }
+
+        h2 {
+            /*----- BLOGGER H2 ----- */
+            display: table;
+
+            margin: auto;
+            padding: 10px 0;
+
+            text-align: center;
+            letter-spacing: 5px;
+
+            color: #fff;
+            border-top: solid 1px #fff;
+            border-bottom: solid 1px #fff;
+            text-shadow: 10px 8px 1px #9e7f3b;
+
+            @media screen and (min-width: 769px) {
+                font-size: 400%;
+            }
+
+            @media screen and (max-width:768px) {
+                font-size: 200%;
+            }
+        }
+
+        .blogger_main {
+            /*----- BLOGGER MAIN ----- */
+
+            @media screen and (min-width: 769px) {
+                display: flex;
+
+                box-sizing: border-box;
+                width: 100%;
+                max-width: 1100px;
+                margin: 0 auto;
+
+                .blogger_left {
+                    padding: 2%;
+                }
+
+                .blogger_right {
+                    margin-top: 20%;
+                    padding: 2%;
+                }
+
+                img {
+                    &:nth-child(2) {
+                        margin-top: -22%;
+                    }
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .blogger_left {
+                    margin-top: -2%;
+                }
+
+                .blogger_right {
+                    margin-top: -22%;
+                }
+
+                img {
+                    &:nth-child(2) {
+                        margin-top: -22%;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: -22%;
+                    }
+                }
+            }
+        }
+    }
+
+    .step {
+        /*-------------------------
+            ./ STEP
+        -------------------------*/
+        padding: 5% 0;
+
+        background-color: #f2f2f2;
+
+        background-attachment: fixed;
+
+        @media screen and (min-width: 769px) {
+            background-image: url('../images/circle_pc.png');
+        }
+
+        @media screen and (max-width:768px) {
+            background-image: url('../images/circle_sp.png');
+        }
+
+        h2 {
+            /*----- STEP H2 ----- */
+            margin: auto;
+            padding: 10px 5%;
+
+            text-align: center;
+            letter-spacing: 5px;
+
+            color: #04123e;
+
+            img {
+                margin-right: 10px;
+
+                vertical-align: bottom;
+            }
+
+            @media screen and (min-width:769px) {
+                font-size: 400%;
+
+                img {
+                    width: 10%;
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                font-size: 250%;
+
+                img {
+                    width: 20%;
+                }
+            }
+        }
+
+        .step_main {
+            /*----- STEP MAIN ----- */
+            width: 100%;
+            max-width: 1100px;
+            margin: 5% auto;
+
+            img {
+                margin: 2% auto;
+            }
+
+            .button_teiki {
+                /*----- BUTTON TEIKI ----- */
+                font-weight: bold;
+
+                display: table;
+
+                margin: 20px auto;
+                padding: .3em;
+
+                cursor: pointer;
+                text-align: center;
+
+                color: #fff;
+                border: .3em solid transparent;
+                border-radius: 50px;
+                background: linear-gradient(to bottom, #3cf, #00aeee) content-box,
+                    linear-gradient(to top, #fff, #fff) padding-box,
+                    radial-gradient(ellipse, #fff 40%, #00aeee 100%) border-box;
+
+                @media screen and (min-width: 769px) {
+                    width: 600px;
+
+                    p {
+                        font-size: 250%;
+                        line-height: 2.2;
+
+                        letter-spacing: 5px;
+
+                        .br {
+                            display: none;
+                        }
+                    }
+                }
+
+                @media screen and (max-width:768px) {
+                    width: 250px;
+
+                    p {
+                        font-size: 150%;
+                        line-height: 1.1;
+
+                        padding: 8px 0;
+
+                        letter-spacing: 5px;
+
+                        .br {
+                            display: block;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: linear-gradient(to top, #3cf, #00aeee) content-box,
+                        linear-gradient(to top, #fff, #fff) padding-box,
+                        radial-gradient(ellipse, #fff 40%, #00aeee 100%) border-box;
+                }
+            }
+        }
+    }
+
+    .call{
+        @media screen and (min-width: 769px) {
+            font-size: 150%;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 125%;
+        }
+        @media screen and (max-width: 414px) {
+            font-size: 100%;
+        }
+        font-size: 125%;
+        text-align: center;
+        color:#BB9A43;
+        letter-spacing: 1px;
+    }
+}

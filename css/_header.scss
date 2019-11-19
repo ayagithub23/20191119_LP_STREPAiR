@@ -1,0 +1,224 @@
+/*-------------------------
+    HEADER
+-------------------------*/ 
+.header {
+    position: relative;
+    z-index: 99;
+
+    @media screen and (max-width: 768px) {
+        position: fixed;
+        top: 0;
+
+        display: flex;
+
+        width: 98%;
+        height: 60px;
+        padding: 0 1%;
+
+        background: rgba(0, 0, 0, .45);
+
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    @media screen and (max-width:768px) {
+        .menu_btn {
+            cursor: pointer;
+
+            span {
+                position: relative;
+
+                display: block;
+
+                width: 40px;
+                height: 4px;
+                margin: 10px auto;
+
+                transition: transform .4s cubic-bezier(.77, .2, .05, 1), transform .4s cubic-bezier(.77, .2, .05, 1), opacity .4s ease;
+                transform-origin: 5px 0;
+
+                border-radius: 3px;
+                background: #fff;
+            }
+        }
+    }
+
+    .logo {
+        /*----- HEADER LOGO ----- */ 
+        position: relative;
+
+        display: block;
+
+        @media screen and (min-width: 769px) {
+            position: absolute;
+            top: 90px;
+            left: 22%;
+
+            width: 100px;
+
+            transform: translateX(-22%);
+        }
+
+        @media screen and (max-width:768px) {
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    nav {
+        /*----- HEADER NAV ----- */ 
+        z-index: 99;
+
+        @media screen and (min-width: 769px) {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+
+            text-align: right;
+        }
+
+        @media screen and (max-width:768px) {
+            position: absolute;
+            top: 60px;
+            left: 0;
+
+            width: 100%;
+            height: 0;
+
+            background: rgba(0, 0, 0, .45);
+        }
+
+        a {
+            /*----- HEADER A ----- */ 
+
+            font-family: 'Noto Sans TC', sans-serif;
+
+            color: #fff;
+            text-shadow: .1em .1em .2em black;
+
+
+            @media screen and (min-width: 769px) {
+                font-size: 1.5rem;
+
+                display: block;
+
+                margin-bottom: 15px;
+
+                letter-spacing: 3px;
+
+                p {
+                    display: inline;
+
+                    padding-bottom: 2.5px;
+
+                    border-bottom: solid 1px;
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                font-size: 2rem;
+
+                display: none;
+
+                text-align: center;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+
+/*-------------------------
+    HEADER CHECKBOX
+-------------------------*/ 
+#menuControl {
+    display: none;
+}
+@media screen and (max-width:768px) {
+
+    #menuControl:checked~.banner,
+    #menuControl:checked~#wrap,
+    #menuControl:checked~.wave,
+    #menuControl:checked~.composition {
+        filter: blur(5px);
+    }
+
+    #menuControl:checked~.header {
+        .menu_btn {
+            span {
+                transform: rotate(45deg) translate(-2px, -1px);
+
+                opacity: 1;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(4px, -2px);
+                    transform-origin: 0 0;
+                }
+
+                &:nth-child(2) {
+                    transform: rotate(0deg) scale(.2, .2);
+
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(2px, -2px);
+                }
+            }
+        }
+
+        nav {
+            height: calc(100vh - 60px);
+
+            a {
+                position: absolute;
+
+                display: block;
+
+                width: 100%;
+
+                transition: opacity .3s;
+
+                opacity: .5;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &:nth-child(1) {
+                    top: 16%;
+                    left: 50%;
+
+                    transform: translate(-50%, -16%);
+                }
+
+                &:nth-child(2) {
+                    top: 32%;
+                    left: 50%;
+
+                    transform: translate(-50%, -32%);
+                }
+
+                &:nth-child(3) {
+                    top: 48%;
+                    left: 50%;
+
+                    transform: translate(-50%, -48%);
+                }
+
+                &:nth-child(4) {
+                    top: 64%;
+                    left: 50%;
+
+                    transform: translate(-50%, -64%);
+                }
+
+                &:nth-child(5) {
+                    top: 80%;
+                    left: 50%;
+
+                    transform: translate(-50%, -80%);
+                }
+            }
+        }
+    }
+}

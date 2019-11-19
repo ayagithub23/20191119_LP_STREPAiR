@@ -1,0 +1,171 @@
+/*-------------------------
+    WAVE
+-------------------------*/
+.wave {
+    position: relative;
+    z-index: 1;
+
+    height: 100px;
+    margin-top: -5%;
+
+    background: url('../images/wave_1.png'), linear-gradient(transparent 0%, transparent 90%, #04123e 90%, #04123e 100%);
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: 100%;
+
+    @media screen and(max-width: 768px) {
+        height: 80px;
+    }
+
+    @media screen and(max-width: 414px) {
+        height: 40px;
+    }
+
+    @media screen and(max-width: 320px) {
+        height: 30px;
+    }
+}
+
+/*-------------------------
+    COMPOSITION
+-------------------------*/
+.composition {
+    overflow-x: hidden;
+
+    padding: 5% 0;
+
+    background: #04123e;
+
+    h2 {
+        /*----- COMPOSITION H2 ----- */
+        font-weight: 500;
+
+        padding: 0 2%;
+
+        text-align: center;
+        letter-spacing: 2px;
+
+        color: #fff;
+
+        img {
+            padding: 0 10px;
+        }
+
+        @media screen and (min-width: 901px) {
+            font-size: 450%;
+
+            img {
+                width: 5%;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            font-size: 300%;
+
+            text-align: center;
+
+            img {
+                width: 4%;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            font-size: 180%;
+
+            text-align: center;
+
+            img {
+                width: 3%;
+            }
+        }
+    }
+
+    .composition_main {
+        /*----- COMPOSITION MAIN ----- */
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        max-width: 1220px;
+        margin: auto;
+
+        @media screen and (min-width: 901px) {
+            height: 100vh;
+        }
+
+        @media screen and (max-width:900px) {
+            height: auto;
+        }
+
+        img {
+            margin: auto;
+
+            @media screen and (max-width: 900px) {
+                display: block;
+
+                width: 80%;
+                margin: auto;
+                padding: 20px 0;
+
+                &:nth-child(1) {
+                    display: none;
+                }
+            }
+
+            @media screen and (min-width:901px) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                width: 45%;
+
+                &:nth-child(1) {
+                    width: 20%;
+                }
+
+                &:nth-child(2) {
+                    top: -60%;
+                    right: 0;
+                    bottom: 0;
+                    left: 30%;
+                    // transform: translate(-75%,0%);
+                }
+
+                &:nth-child(3) {
+                    top: -20%;
+                    right: 0;
+                    bottom: 0;
+                    left: -70%;
+                    // transform: translate(18%,-30%);
+                }
+
+                &:nth-child(4) {
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 60%;
+                    // transform: translate(-110%,-45%);
+                }
+
+                &:nth-child(5) {
+                    top: 50%;
+                    right: 0;
+                    bottom: 0;
+                    left: -60%;
+                    // transform: translate(10%,-80%);
+                }
+
+                &:nth-child(6) {
+                    top: 55%;
+                    right: 0;
+                    bottom: 0;
+                    left: 50%;
+                    // transform: translate(-90%,-95%);
+                }
+            }
+        }
+    }
+}
